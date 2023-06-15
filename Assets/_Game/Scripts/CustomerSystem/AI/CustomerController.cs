@@ -15,11 +15,13 @@ namespace Aezakmi.CustomerSystem.AI
     {
         private CustomerStoreAccesswayController m_customerStoreAccesswayController;
         private CustomerShoppingController m_customerShoppingController;
+        private CustomerCounterController m_customerCounterController;
 
         private void Start()
         {
             m_customerStoreAccesswayController = GetComponent<CustomerStoreAccesswayController>();
             m_customerShoppingController = GetComponent<CustomerShoppingController>();
+            m_customerCounterController = GetComponent<CustomerCounterController>();
 
             m_customerStoreAccesswayController.EnterStore();
         }
@@ -45,14 +47,30 @@ namespace Aezakmi.CustomerSystem.AI
 
             if (willBuy)
             {
-                Debug.Log("Buy.");
-                // todo: move to counter
+                m_customerCounterController.enabled = true;
+                m_customerCounterController.GetStoreCounter();
             }
             else
             {
-                m_customerStoreAccesswayController.enabled = true;
-                m_customerStoreAccesswayController.LeaveStore();
+                var willContinueShopping = CustomerBehaviourParameters.Instance.GetContinueShoppingDecision();
+
+                if (willContinueShopping)
+                {
+                    m_customerShoppingController.enabled = true;
+                    m_customerShoppingController.MoveToShelf();
+                }
+                else
+                {
+                    m_customerStoreAccesswayController.enabled = true;
+                    m_customerStoreAccesswayController.LeaveStore();
+                }
             }
+        }
+
+        public void ItemBought()
+        {
+            m_customerStoreAccesswayController.enabled = true;
+            m_customerStoreAccesswayController.LeaveStore();
         }
     }
 }

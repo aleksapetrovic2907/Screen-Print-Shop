@@ -33,6 +33,7 @@ namespace Aezakmi.CustomerSystem.AI
         {
             currentStoreShelfWanderPoint = StoreShelfWanderPointsManager.Instance.GetRandomShelfWanderPoint();
             m_aiPath.destination = currentStoreShelfWanderPoint.GetRandomPointInArea();
+            m_aiPath.canMove = true;
         }
 
         public void ReachedShelf()

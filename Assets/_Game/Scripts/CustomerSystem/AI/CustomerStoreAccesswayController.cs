@@ -39,6 +39,7 @@ namespace Aezakmi.CustomerSystem.AI
             storeAccessingState = StoreAccessingStates.LeavingStore;
             m_targetPosition = StoreAccesswaysManager.Instance.GetRandomExit();
             m_aiPath.destination = m_targetPosition;
+            m_aiPath.canMove = true;
         }
     }
 }
