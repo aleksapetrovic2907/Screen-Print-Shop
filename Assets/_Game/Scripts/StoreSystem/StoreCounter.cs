@@ -6,6 +6,8 @@ namespace Aezakmi.StoreSystem
 {
     public class StoreCounter : MonoBehaviour
     {
+        public float TimePassedNormalized => m_timer / StoreCountersManager.Instance.sellDuration;
+        public float TimeLeft => StoreCountersManager.Instance.sellDuration - m_timer;
         public int CustomersCount => customersInQueue.Count;
         public List<CustomerCounterController> customersInQueue;
         public bool isSupervised = false;
@@ -14,6 +16,12 @@ namespace Aezakmi.StoreSystem
         [SerializeField] private Vector3 offsetPerCustomer;
 
         private float m_timer = 0f;
+        private StoreCounterAnimator m_storeCounterAnimator;
+
+        private void Start()
+        {
+            m_storeCounterAnimator = GetComponent<StoreCounterAnimator>();
+        }
 
         private void Update()
         {
@@ -40,9 +48,8 @@ namespace Aezakmi.StoreSystem
 
         public void AddCustomer(CustomerCounterController customer)
         {
-            customersInQueue.Add(customer);
-
             customer.MoveInQueue(queueFirstSpot.position + offsetPerCustomer * CustomersCount);
+            customersInQueue.Add(customer);
         }
 
         private void SellItem()
@@ -50,6 +57,7 @@ namespace Aezakmi.StoreSystem
             customersInQueue[0].GetComponent<CustomerController>().ItemBought();
             customersInQueue.RemoveAt(0);
             MoveAllCustomers();
+            m_storeCounterAnimator.ItemSold();
         }
 
         private void MoveAllCustomers()

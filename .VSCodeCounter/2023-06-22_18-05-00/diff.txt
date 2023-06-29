@@ -1,0 +1,37 @@
+Date : 2023-06-22 18:05:00
+Directory : e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts
+Total : 8 files,  50 codes, 0 comments, 14 blanks, all 64 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C#       |          8 |         50 |          0 |         14 |         64 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                             |          8 |         50 |          0 |         14 |         64 |
+| CameraSystem                                                                                                  |          1 |          2 |          0 |          0 |          2 |
+| PrintSystem                                                                                                   |          5 |         47 |          0 |         14 |         61 |
+| PrintSystem\Patterns                                                                                          |          4 |         44 |          1 |         13 |         58 |
+| PrintSystem\Selections                                                                                        |          1 |          3 |         -1 |          1 |          3 |
+| Transitions                                                                                                   |          2 |          1 |          0 |          0 |          1 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                      | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CameraSystem\PrintCameraController.cs                 | C#       |          2 |          0 |          0 |          2 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Patterns\ButtonUI.cs                      | C#       |         10 |          0 |          2 |         12 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Patterns\PatternButtonUI.cs               | C#       |        -10 |          0 |         -2 |        -12 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Patterns\PatternColorSelectionManager.cs  | C#       |         30 |          0 |          6 |         36 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Patterns\PatternSelectionManager.cs       | C#       |         14 |          1 |          7 |         22 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Selections\MerchandiseSelectionManager.cs | C#       |          3 |         -1 |          1 |          3 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Transitions\TransitionAnimation.cs                    | C#       |         21 |          0 |          3 |         24 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Transitions\TransitionAnimationBase.cs                | C#       |        -20 |          0 |         -3 |        -23 |
+| Total                                                                                                         |          |         50 |          0 |         14 |         64 |
++---------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

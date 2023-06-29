@@ -15,6 +15,7 @@ namespace Aezakmi.StoreSystem
 
             for (int i = 0; i < storeCounters.Count; i++)
             {
+                if (!storeCounters[i].gameObject.activeSelf) continue;
                 if (storeCounters[i].CustomersCount >= storeCounters[leastOccupiedCounterIndex].CustomersCount) continue;
                 leastOccupiedCounterIndex = i;
             }

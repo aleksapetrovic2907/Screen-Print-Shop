@@ -1,10 +1,11 @@
 using UnityEngine;
+using Aezakmi.StoreSystem.StackSystem;
 
 namespace Aezakmi.StoreSystem
 {
     public class StoreShelfWanderPoint : MonoBehaviour
     {
-        public Transform observePoint; // The point the customers will look at when they reach the given wander point.
+        public ShelfController shelfController;
 
         [SerializeField] private Vector3 size = Vector3.one;
         [SerializeField] private Vector3 offset = Vector3.zero;

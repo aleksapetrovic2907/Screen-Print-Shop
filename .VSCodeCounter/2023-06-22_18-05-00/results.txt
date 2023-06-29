@@ -1,0 +1,84 @@
+Date : 2023-06-22 18:05:00
+Directory : e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts
+Total : 45 files,  1205 codes, 17 comments, 240 blanks, all 1462 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C#       |         45 |      1,205 |         17 |        240 |      1,462 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                             |         45 |      1,205 |         17 |        240 |      1,462 |
+| . (Files)                                                                                                     |          8 |        218 |          3 |         41 |        262 |
+| CameraSystem                                                                                                  |          4 |         55 |          0 |         10 |         65 |
+| CustomerSystem                                                                                                |          8 |        253 |          9 |         49 |        311 |
+| CustomerSystem (Files)                                                                                        |          4 |         81 |          0 |         16 |         97 |
+| CustomerSystem\AI                                                                                             |          4 |        172 |          9 |         33 |        214 |
+| PlayerSystem                                                                                                  |          3 |         69 |          0 |         14 |         83 |
+| PrintSystem                                                                                                   |          8 |        226 |          5 |         49 |        280 |
+| PrintSystem (Files)                                                                                           |          1 |         21 |          3 |          4 |         28 |
+| PrintSystem\MerchandisePresets                                                                                |          1 |         10 |          0 |          1 |         11 |
+| PrintSystem\Patterns                                                                                          |          4 |        130 |          2 |         28 |        160 |
+| PrintSystem\Selections                                                                                        |          2 |         65 |          0 |         16 |         81 |
+| StoreSystem                                                                                                   |          5 |        122 |          0 |         26 |        148 |
+| Transitions                                                                                                   |          2 |         47 |          0 |          7 |         54 |
+| Tweens                                                                                                        |          4 |        134 |          0 |         28 |        162 |
+| Zones                                                                                                         |          3 |         81 |          0 |         16 |         97 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                      | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CameraSystem\FollowTarget.cs                          | C#       |         15 |          0 |          3 |         18 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CameraSystem\IdleCameraController.cs                  | C#       |          7 |          0 |          2 |          9 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CameraSystem\PrintCameraController.cs                 | C#       |         19 |          0 |          3 |         22 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CameraSystem\Repositioner.cs                          | C#       |         14 |          0 |          2 |         16 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CustomerSystem\AI\CustomerController.cs               | C#       |         57 |          9 |         10 |         76 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CustomerSystem\AI\CustomerCounterController.cs        | C#       |         36 |          0 |          6 |         42 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CustomerSystem\AI\CustomerShoppingController.cs       | C#       |         41 |          0 |         10 |         51 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CustomerSystem\AI\CustomerStoreAccesswayController.cs | C#       |         38 |          0 |          7 |         45 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CustomerSystem\CharacterCustomizer.cs                 | C#       |         40 |          0 |         10 |         50 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CustomerSystem\CustomerAnimationsController.cs        | C#       |         19 |          0 |          3 |         22 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CustomerSystem\CustomerBehaviourParameters.cs         | C#       |         13 |          0 |          2 |         15 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\CustomerSystem\CustomizationManager.cs                | C#       |          9 |          0 |          1 |         10 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\EventManager.cs                                       | C#       |         66 |          2 |         12 |         80 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\FPSSetter.cs                                          | C#       |          9 |          0 |          1 |         10 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\GameManager.cs                                        | C#       |         23 |          0 |          4 |         27 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\GloballyAccessibleBase.cs                             | C#       |         14 |          0 |          4 |         18 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PlayerSystem\PlayerAnimationsController.cs            | C#       |         18 |          0 |          3 |         21 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PlayerSystem\PlayerController.cs                      | C#       |          7 |          0 |          2 |          9 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PlayerSystem\PlayerMovement.cs                        | C#       |         44 |          0 |          9 |         53 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\MerchandisePresets\MerchandisePreset.cs   | C#       |         10 |          0 |          1 |         11 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Patterns\ButtonUI.cs                      | C#       |         10 |          0 |          2 |         12 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Patterns\PatternColorSelectionManager.cs  | C#       |         30 |          0 |          6 |         36 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Patterns\PatternPreset.cs                 | C#       |         11 |          0 |          1 |         12 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Patterns\PatternSelectionManager.cs       | C#       |         79 |          2 |         19 |        100 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Selections\MerchandiseSelectionManager.cs | C#       |         48 |          0 |         12 |         60 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\Selections\SelectableMerch.cs             | C#       |         17 |          0 |          4 |         21 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\PrintSystem\SolidPainter.cs                           | C#       |         21 |          3 |          4 |         28 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\SingletonBase.cs                                      | C#       |         15 |          0 |          4 |         19 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\StoreSystem\StoreAccesswaysManager.cs                 | C#       |         12 |          0 |          2 |         14 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\StoreSystem\StoreCounter.cs                           | C#       |         53 |          0 |         10 |         63 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\StoreSystem\StoreCountersManager.cs                   | C#       |         20 |          0 |          5 |         25 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\StoreSystem\StoreShelfWanderPoint.cs                  | C#       |         27 |          0 |          7 |         34 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\StoreSystem\StoreShelfWanderPointsManager.cs          | C#       |         10 |          0 |          2 |         12 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Tags.cs                                               | C#       |          7 |          0 |          0 |          7 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\TextureTilingController.cs                            | C#       |         23 |          1 |          4 |         28 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Transitions\FadeScreenTransitionAnimation.cs          | C#       |         26 |          0 |          4 |         30 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Transitions\TransitionAnimation.cs                    | C#       |         21 |          0 |          3 |         24 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Tweens\Move.cs                                        | C#       |         31 |          0 |          7 |         38 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Tweens\Rotate.cs                                      | C#       |         31 |          0 |          7 |         38 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Tweens\Scale.cs                                       | C#       |         31 |          0 |          7 |         38 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Tweens\TweenBase.cs                                   | C#       |         41 |          0 |          7 |         48 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\XMLManagerBase.cs                                     | C#       |         61 |          0 |         12 |         73 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Zones\StoreCounterZone.cs                             | C#       |         36 |          0 |          7 |         43 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Zones\TestZone.cs                                     | C#       |         11 |          0 |          1 |         12 |
+| e:\UnityProjects\Screen Print Shop\Assets\_Game\Scripts\Zones\ZoneBase.cs                                     | C#       |         34 |          0 |          8 |         42 |
+| Total                                                                                                         |          |      1,205 |         17 |        240 |      1,462 |
++---------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b983c50de7a4184990ff7a3c7526f84, type: 3}
+  m_Name: Cat Pattern Preset
+  m_EditorClassIdentifier: 
+  patternSpriteUI: {fileID: 21300000, guid: c7a9daa4965ee714991f3743fc19b69c, type: 3}
+  patternPrefab: {fileID: 990599997731722937, guid: 5d78897d6e6e85843b7d75118fd01ab9,
+    type: 3}
+  patternMask: {fileID: 2800000, guid: e6dc7553484f1a1458ed6f31b84a7bab, type: 3}

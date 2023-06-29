@@ -1,4 +1,5 @@
 using UnityEngine;
+using Aezakmi.StoreSystem.Printers;
 
 namespace Aezakmi.CustomerSystem.AI
 {
@@ -13,15 +14,21 @@ namespace Aezakmi.CustomerSystem.AI
 
     public class CustomerController : MonoBehaviour
     {
+        [HideInInspector] public PrinterController printerShirtBoughtFrom;
+
         private CustomerStoreAccesswayController m_customerStoreAccesswayController;
         private CustomerShoppingController m_customerShoppingController;
         private CustomerCounterController m_customerCounterController;
+        private CustomerDeletionController m_customerDeletionController;
+        private CustomerEmojisController m_customerEmojisController;
 
         private void Start()
         {
             m_customerStoreAccesswayController = GetComponent<CustomerStoreAccesswayController>();
             m_customerShoppingController = GetComponent<CustomerShoppingController>();
             m_customerCounterController = GetComponent<CustomerCounterController>();
+            m_customerDeletionController = GetComponent<CustomerDeletionController>();
+            m_customerEmojisController = GetComponent<CustomerEmojisController>();
 
             m_customerStoreAccesswayController.EnterStore();
         }
@@ -37,18 +44,21 @@ namespace Aezakmi.CustomerSystem.AI
             }
             else
             {
-                // todo: move to deletion point
+                m_customerDeletionController.enabled = true;
+                m_customerDeletionController.MoveToDeletionPoint();
             }
         }
 
         public void ObservedShelf()
         {
-            var willBuy = CustomerBehaviourParameters.Instance.GetBuyDecision();
+            var willBuy = CustomerBehaviourParameters.Instance.GetBuyDecision() && m_customerShoppingController.currentStoreShelfWanderPoint.shelfController.HasShirts;
 
             if (willBuy)
             {
+                m_customerShoppingController.currentStoreShelfWanderPoint.shelfController.GiveToCustomer(this);
                 m_customerCounterController.enabled = true;
                 m_customerCounterController.GetStoreCounter();
+                m_customerEmojisController.ShowHappyEmojis();
             }
             else
             {
@@ -63,12 +73,23 @@ namespace Aezakmi.CustomerSystem.AI
                 {
                     m_customerStoreAccesswayController.enabled = true;
                     m_customerStoreAccesswayController.LeaveStore();
+                    m_customerEmojisController.ShowAngryEmojis();
                 }
             }
         }
 
         public void ItemBought()
         {
+            GameManager.Instance.ItemSold();
+            m_customerCounterController.enabled = false;
+            m_customerStoreAccesswayController.enabled = true;
+            m_customerStoreAccesswayController.LeaveStore();
+            m_customerEmojisController.ShowHappyEmojis();
+        }
+
+        public void LeaveDueToEmptyStore()
+        {
+            m_customerShoppingController.enabled = false;
             m_customerStoreAccesswayController.enabled = true;
             m_customerStoreAccesswayController.LeaveStore();
         }

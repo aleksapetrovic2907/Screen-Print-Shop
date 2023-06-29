@@ -32,6 +32,13 @@ namespace Aezakmi.CustomerSystem.AI
         public void MoveToShelf()
         {
             currentStoreShelfWanderPoint = StoreShelfWanderPointsManager.Instance.GetRandomShelfWanderPoint();
+
+            if (currentStoreShelfWanderPoint == null)
+            {
+                m_customerController.LeaveDueToEmptyStore();
+                return;
+            }
+
             m_aiPath.destination = currentStoreShelfWanderPoint.GetRandomPointInArea();
             m_aiPath.canMove = true;
         }
@@ -40,7 +47,7 @@ namespace Aezakmi.CustomerSystem.AI
         {
             m_aiPath.canMove = false;
 
-            var lookPosition = (currentStoreShelfWanderPoint.observePoint.position - transform.position).normalized;
+            var lookPosition = (currentStoreShelfWanderPoint.shelfController.observePoint.position - transform.position).normalized;
             lookPosition.y = transform.position.y;
             var direction = Quaternion.LookRotation(lookPosition);
             transform.DORotateQuaternion(direction, s_rotateTowardsShelfDuration).SetEase(Ease.OutSine).Play();

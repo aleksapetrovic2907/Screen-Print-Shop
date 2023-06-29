@@ -8,9 +8,19 @@ namespace Aezakmi.CustomerSystem.AI
     {
         public bool ReachedQueuePosition { get; private set; } = false;
 
+        [SerializeField] private GameObject basket;
+        [SerializeField] private GameObject bag;
+
         private AIPath m_aiPath;
         private CustomerController m_customerController;
         private StoreCounter m_storeCounter;
+
+        private void OnEnable() => basket.SetActive(true);
+        private void OnDisable()
+        {
+            basket.SetActive(false);
+            bag.SetActive(true);
+        }
 
         private void Awake()
         {

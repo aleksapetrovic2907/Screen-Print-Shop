@@ -5,6 +5,8 @@ namespace Aezakmi.StoreSystem
 {
     public class StoreAccesswaysManager : GloballyAccessibleBase<StoreAccesswaysManager>
     {
+        public Transform deletionPoint;
+        
         [SerializeField] private List<Transform> entrances;
         [SerializeField] private List<Transform> exits;
 
